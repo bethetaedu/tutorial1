@@ -28,9 +28,6 @@
   </head>
 
   <body>
-      <script>
-      var subDiamonds = createMainStructureE(subDiamonds);
-      </script>
     <header>
       <div class="inner">
         <h1>Tutorial</h1>
@@ -53,14 +50,14 @@
 And it will show like below graph.
  여기에 예제가 들어갖으면 좋겠네
 ㅠㅠ</p>
-<div id="content">
-            <div id="content1" class="right-output">
-              <div id="container1" oncontextmenu="return false;"></div></div>
-            <div id="content2" class="right-output">
-              <div id="container2" oncontextmenu="return false;"></div></div>
-          </div>
-          <script>
-    
+  <div id="content">
+    <div id="content1" class="right-output">
+        <div id="container1" oncontextmenu="return false;"></div></div>
+    <div id="content2" class="right-output">
+        <div id="container2" oncontextmenu="return false;"></div></div>
+  </div>
+  <script>
+     var subDiamonds = createMainStructureE(subDiamonds);
     var axis1 = new Axis(1, subDiamonds, 'carat', 'price', {legend: 'color'});
     var point1 = new Dot(axis1, subDiamonds, 'carat', 'price', {});
     var axis2 = new Axis(2, subDiamonds, 'table', 'price', {legend: 'carat'});
