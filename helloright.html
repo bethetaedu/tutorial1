@@ -48,8 +48,6 @@
 
 <p>For example, in original R, you can draw basic scatter grpahs like below.</p>
 
-<pre><code>&gt; plot(price ~ carat, diamonds, type="p")
-</code></pre>
 <div class="highlight highlight-R"><pre><span class="o">&gt;</span> subDiamonds <span class="o">&lt;-</span> diamonds<span class="p">[</span><span class="kp">sample</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="kp">nrow</span><span class="p">(</span>diamonds<span class="p">),</span> <span class="m">50</span><span class="p">,</span> <span class="bp">T</span><span class="p">)</span> <span class="p">,]</span>
 <span class="o">&gt;</span> plot<span class="p">(</span>price <span class="o">~</span> carat<span class="p">,</span> subDiamonds<span class="p">,</span> type<span class="o">=</span><span class="s">"p"</span><span class="p">)</span>
 </pre></div>
@@ -59,8 +57,6 @@
 
 <p>Now, what you need to get our RIGHT graph is just wrapping with RIGHT bracket.</p>
 
-<pre><code>&gt; RIGHT(plot(price ~ carat, diamonds, type="p"))
-</code></pre>
 <div class="highlight highlight-R"><pre><span class="o">&gt;</span> RIGHT<span class="p">(</span>plot<span class="p">(</span>price <span class="o">~</span> carat<span class="p">,</span> subDiamonds<span class="p">,</span> type<span class="o">=</span><span class="s">"p"</span><span class="p">))</span>
 </pre></div>
 
