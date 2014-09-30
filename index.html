@@ -26,6 +26,16 @@
     <script>
       var subDiamonds = createMainStructureE(subDiamonds);
     </script>
+    <script>
+    
+    var axis1 = new Axis(1, subDiamonds, 'carat', 'price', {legend: 'color'});
+    var point1 = new Dot(axis1, subDiamonds, 'carat', 'price', {});
+    var axis2 = new Axis(2, subDiamonds, 'table', 'price', {legend: 'carat'});
+    var point2 = new Dot(axis2, subDiamonds, 'table', 'price', {});
+    
+    subDiamonds.draw();
+    var AllAxisObjArr = [axis1, axis2]; eventTrigger(AllAxisObjArr);
+  </script>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -63,16 +73,7 @@ And it will show like below graph.
             <div id="content2" class="right-output">
               <div id="container2" oncontextmenu="return false;"></div></div>
           </div>
-  <script>
-    
-    var axis1 = new Axis(1, subDiamonds, 'carat', 'price', {legend: 'color'});
-    var point1 = new Dot(axis1, subDiamonds, 'carat', 'price', {});
-    var axis2 = new Axis(2, subDiamonds, 'table', 'price', {legend: 'carat'});
-    var point2 = new Dot(axis2, subDiamonds, 'table', 'price', {});
-    
-    subDiamonds.draw();
-    var AllAxisObjArr = [axis1, axis2]; eventTrigger(AllAxisObjArr);
-  </script>
+  
 
 
 <p>Now, what you need to get our RIGHT graph is just wrapping with RIGHT bracket.
